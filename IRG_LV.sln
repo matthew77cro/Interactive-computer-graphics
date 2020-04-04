@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.2.PrviOpenGL", "1.2.PrviOpenGL\1.2.PrviOpenGL.csproj", "{144727BB-08F2-4037-99CC-916C9B705C1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.3.LinijeNaRasteru", "1.3.LinijeNaRasteru\1.3.LinijeNaRasteru.csproj", "{13520005-BBBA-41C6-BECD-B112B0D5C2B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.1.LinearnaAlgebra", "1.1.LinearnaAlgebra\1.1.LinearnaAlgebra.csproj", "{963196E4-0344-4E9B-8F53-FA9EEDBF06ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.1.LinearnAlgebraDemo", "1.1.LinearnAlgebraDemo\1.1.LinearnAlgebraDemo.csproj", "{21394ECA-9F89-4189-832F-35763CFE3E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.4.Poligoni", "2.4.Poligoni\2.4.Poligoni.csproj", "{D31C1B9C-E333-4217-A7AD-02F0CE5F48C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.5.3DTijela", "2.5.3DTijela\2.5.3DTijela.csproj", "{84D8AD09-9E3E-42B0-8E26-85B2288C69AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{144727BB-08F2-4037-99CC-916C9B705C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144727BB-08F2-4037-99CC-916C9B705C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144727BB-08F2-4037-99CC-916C9B705C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144727BB-08F2-4037-99CC-916C9B705C1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13520005-BBBA-41C6-BECD-B112B0D5C2B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13520005-BBBA-41C6-BECD-B112B0D5C2B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13520005-BBBA-41C6-BECD-B112B0D5C2B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13520005-BBBA-41C6-BECD-B112B0D5C2B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{963196E4-0344-4E9B-8F53-FA9EEDBF06ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{963196E4-0344-4E9B-8F53-FA9EEDBF06ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{963196E4-0344-4E9B-8F53-FA9EEDBF06ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{963196E4-0344-4E9B-8F53-FA9EEDBF06ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21394ECA-9F89-4189-832F-35763CFE3E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21394ECA-9F89-4189-832F-35763CFE3E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21394ECA-9F89-4189-832F-35763CFE3E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21394ECA-9F89-4189-832F-35763CFE3E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D31C1B9C-E333-4217-A7AD-02F0CE5F48C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31C1B9C-E333-4217-A7AD-02F0CE5F48C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31C1B9C-E333-4217-A7AD-02F0CE5F48C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31C1B9C-E333-4217-A7AD-02F0CE5F48C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D8AD09-9E3E-42B0-8E26-85B2288C69AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D8AD09-9E3E-42B0-8E26-85B2288C69AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D8AD09-9E3E-42B0-8E26-85B2288C69AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D8AD09-9E3E-42B0-8E26-85B2288C69AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06973CB0-383C-4AD0-AE54-CDA5658B27C1}
+	EndGlobalSection
+EndGlobal
