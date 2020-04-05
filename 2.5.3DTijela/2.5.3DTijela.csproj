@@ -36,9 +36,6 @@
     <StartupObject>Tijela3D.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OpenTK, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
-      <HintPath>..\packages\OpenTK.3.1.0\lib\net20\OpenTK.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,8 +51,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="OpenTK.dll.config" />
-    <None Include="packages.config" />
+    <None Include="objekti\all.obj" />
+    <None Include="objekti\arena.obj" />
+    <None Include="objekti\bird.obj" />
+    <None Include="objekti\bull.obj" />
+    <None Include="objekti\dragon.obj" />
+    <None Include="objekti\frog.obj" />
+    <None Include="objekti\kocka.obj" />
+    <None Include="objekti\porsche.obj" />
+    <None Include="objekti\skull.obj" />
+    <None Include="objekti\teapot.obj" />
+    <None Include="objekti\teddy.obj" />
+    <None Include="objekti\tetrahedron.obj" />
+    <None Include="objekti\tsd00.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\1.1.LinearnaAlgebra\1.1.LinearnaAlgebra.csproj">
+      <Project>{963196e4-0344-4e9b-8f53-fa9eedbf06ed}</Project>
+      <Name>1.1.LinearnaAlgebra</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

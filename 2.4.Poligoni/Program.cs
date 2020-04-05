@@ -217,7 +217,7 @@ namespace Poligoni
         
         private void FillPoly()
         {
-            List<Point> vertices = model.Poly.getPointsClockwise();
+            List<Point> vertices = model.Poly.GetPointsClockwise();
             if (model.ProgramState == WindowModel.State.POLY_DRAW)
             {
                 vertices.Add(new Point(model.MouseX, model.MouseY));
@@ -389,12 +389,17 @@ namespace Poligoni
             Vector point = new Vector(new double[] { x, y, 1 });
 
             sbyte sign = 0;
+            bool onPoly = false;
             for (int i = 0; i < vertices.Count; i++)
             {
                 Edge edge = new Edge(vertices[i].X, vertices[i].Y, vertices[(i + 1) % vertices.Count].X, vertices[(i + 1) % vertices.Count].Y);
                 double scalarProduct = point.ScalarProduct(edge.LineHomogCoef);
 
-                if (scalarProduct == 0) return PointPoly.ON_POLY;
+                if (scalarProduct == 0)
+                {
+                    onPoly = true;
+                    continue;
+                }
 
                 sbyte s = scalarProduct < 0 ? (sbyte)-1 : (sbyte)1;
                 if (sign == 0)
@@ -403,7 +408,7 @@ namespace Poligoni
                     return PointPoly.OUT_POLY;
             }
 
-            return PointPoly.IN_POLY;
+            return onPoly ? PointPoly.ON_POLY :PointPoly.IN_POLY;
         }
 
         public IEnumerable<Point> AllPoints()
@@ -441,12 +446,12 @@ namespace Poligoni
             }
         }
 
-        public List<Point> getPoints()
+        public List<Point> GetPoints()
         {
             return vertices.GetRange(0, vertices.Count);
         }
 
-        public List<Point> getPointsClockwise()
+        public List<Point> GetPointsClockwise()
         {
             var vert = vertices.GetRange(0, vertices.Count);
             if (Type == PolyType.CONCAVE_ANTICLOCKWISE || Type == PolyType.CONVEX_ANTICLOCKWISE)

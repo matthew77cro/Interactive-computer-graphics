@@ -86,7 +86,12 @@ namespace IRGLinearAlgebra
         }
         public override IVector NAdd(IVector other)
         {
-            return Copy().Add(other);
+            var v = NewInstance(this.Dimension);
+            for (int i = 0; i < this.Dimension; i++)
+            {
+                v[i] = this[i] + other[i];
+            }
+            return v;
         }
         public override IVector Sub(IVector other)
         {
@@ -102,7 +107,12 @@ namespace IRGLinearAlgebra
         }
         public override IVector NSub(IVector other)
         {
-            return Copy().Sub(other);
+            var v = NewInstance(this.Dimension);
+            for (int i = 0; i < this.Dimension; i++)
+            {
+                v[i] = this[i] - other[i];
+            }
+            return v;
         }
         public override IVector ScalarMultiply(double value)
         {
@@ -115,7 +125,12 @@ namespace IRGLinearAlgebra
         }
         public override IVector NScalarMultiply(double value)
         {
-            return Copy().ScalarMultiply(value);
+            var v = NewInstance(this.Dimension);
+            for (int i = 0; i < this.Dimension; i++)
+            {
+                v[i] = this[i] * value;
+            }
+            return v;
         }
         public override double Norm()
         {
@@ -138,7 +153,13 @@ namespace IRGLinearAlgebra
         }
         public override IVector NNormalize()
         {
-            return Copy().Normalize();
+            double norm = Norm();
+            var v = NewInstance(this.Dimension);
+            for (int i = 0; i < this.Dimension; i++)
+            {
+                v[i] = this[i] / norm;
+            }
+            return v;
         }
         public override double ScalarProduct(IVector other)
         {
