@@ -205,7 +205,7 @@ namespace IRGLinearAlgebra
             double homogeneus = this[Dimension - 1];
             for (int i = 0; i < v.Dimension; i++)
             {
-                this[i] = this[i] / homogeneus;
+                v[i] = this[i] / homogeneus;
             }
 
             return v;
