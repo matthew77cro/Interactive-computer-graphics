@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{21394ECA-9F89-4189-832F-35763CFE3E70}</ProjectGuid>
+    <ProjectGuid>{F473C39C-0F6A-460C-8898-23B00E992149}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LinearnAlgebraDemo</RootNamespace>
-    <AssemblyName>1.1.LinearnAlgebraDemo</AssemblyName>
+    <RootNamespace>Fraktali</RootNamespace>
+    <AssemblyName>4.11.Fraktali</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LinearnaAlgebraDemo.Z1</StartupObject>
+    <StartupObject>Mandelbrot.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="OpenTK, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.3.1.0\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,13 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IFS.cs" />
+    <Compile Include="Mandelbrot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Z1.cs" />
-    <Compile Include="Z2.cs" />
-    <Compile Include="Z3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\1.1.LinearnaAlgebra\1.1.LinearnaAlgebra.csproj">
